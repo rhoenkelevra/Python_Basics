@@ -35,6 +35,7 @@ al, at, once = 5, 10, 15
 1. Variables must start with a letter or underscore
 2. The rest of the name must consist of letters, numbers os underscores.
 3. Name are case-sensitive
+>Hyphens, spaces and special characters like $ are not allowed. Can't begin with number
 
 ### Naming Conventions
 1. Use snake_case 
@@ -72,6 +73,38 @@ String literals can be declared using single or double quotes. We can use either
 In Python there are also "escape characters", which are "metacharacters" - they get interpreted to do something special.
 
 \n => insert new line
-\' => insert single quotes
-\" => insert double quotes
+\\' => insert single quotes
+\\" => insert double quotes
 \\ => insert Backslash
+
+### Comments
+
+Comments start with the # symbol. Any text after the hash mark will not be interpreted
+> Useful to disable lines of code, and more important to describe and make notes about the following code.
+
+###Built in Functions
+##### The print() Function
+
+The print function will print the value inside of the parenthesis on the terminal
+
+##### The input() Function
+
+The input() function waits for the user to input some text and press ENTER
+
+```python
+myName = input()
+# It will ask for the user and assign the inserted value to the variable
+```
+
+##### The len() Function
+Passing the len function to a string, it will evaluates to an integer value of the number of characters in that string
+
+##### The str(), int(), and float() functions
+str(var) => will transform the data type to string (Useful when you have an int or float and want to concat to a string)
+int(var) => will transform the data type to int (The input function always returns a string, to perform math on the inserted data we can use int())
+int(float) => will transform the data type to float
+
+> Text and Number Equivalence
+> 42 == '42' => False
+> 42 = 42.0 => True
+> 42 = 0042.000 => True
